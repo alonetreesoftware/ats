@@ -109,4 +109,11 @@ nav ul.menu li a:hover {
                 gap: 10px;
             }
         }
-    
+
+@media (max-width: 600px) {
+    nav ul.menu {
+        flex-direction: row; /* Mantenha a direção em linha */
+        flex-wrap: wrap; /* Permite que os itens se ajustem se não houver espaço */
+        gap: 10px; /* Espaçamento entre os itens */
+    }
+}
