@@ -1,8 +1,5 @@
-/* style.css - Alone Tree Software */
 
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
-:root {
+        :root {
   --green-primary: #00FF9F;
   --green-dark: #00B271;
   --green-neon: #39FF14;
@@ -11,32 +8,31 @@
   --bg-black: #000000;
   --bg-card: #121212;
 }
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--bg-black);
-  color: var(--green-primary);
-  font-family: 'VT323', monospace;
-  font-size: 18px;
-}
-
-header {
-  display: flex;
-  flex-direction: column; /* Muda a direção para coluna */
-  align-items: center; /* Centraliza os itens */
-  padding: 10px 20px;
-  background-color: var(--bg-black);
-  border-bottom: 1px solid var(--green-olive);
-}
-
-
-.logo img {
-  height: 150px;
-  width: auto;
-}
-
-nav {
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-black);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: var(--bg-black);
+            border-bottom: 1px solid var(--green-olive);
+        }
+        
+        .logo img {
+            max-width: 150px;
+            height: auto;
+        }
+        
+        nav {
   margin-top: 10px; /* Adiciona um espaço entre a logo e o menu */
 }
 
@@ -62,32 +58,18 @@ nav ul.menu li a:hover {
   color: var(--green-neon);
   text-shadow: 0 0 5px var(--green-neon);
 }
-
-main .intro {
-  padding: 40px 20px;
-  background-color: var(--bg-card);
-  border-left: 2px solid var(--green-olive);
-  margin: 20px;
-}
-
-main .intro h1 {
-  color: var(--green-neon);
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-main .intro p {
-  color: var(--cyan-accent);
-  font-size: 1.5rem;
-}
-
-.quote-container {
+        
+        .quote-container {
             text-align: center;
             margin: 40px auto;
             padding: 30px;
             max-width: 800px;
             border-top: 1px solid var(--green-olive);
             border-bottom: 1px solid var(--green-olive);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         
         .quote {
@@ -97,10 +79,33 @@ main .intro p {
             color: #a8a8a8;
             line-height: 1.8;
         }
-
-footer {
+        
+        main {
+            padding: 40px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        footer {
             text-align: center;
             padding: 20px;
             background-color: #111;
             border-top: 1px solid var(--green-olive);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
+        
+        @media (max-width: 600px) {
+            nav ul.menu {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    
